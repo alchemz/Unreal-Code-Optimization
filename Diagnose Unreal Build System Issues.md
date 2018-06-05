@@ -1,6 +1,7 @@
-#Diagnose Unreal Build System Issues
+# Diagnose Unreal Build System Issues
 - fail to generate the project files warning
-The Unreal's Build System work:
+
+How Does The Unreal's Build System work:
 *.xcodeproj, *.sln define how to build the binaries, and Unreal Engine created a independent a system to generate the project files to have the project work under difference operating system.
 The Unreal Build System uses *.Target.cs, *.Build.cs file to generate the project files, which goes to *.xcodeproj, *.sln, and then be translated to the Binaries file.
 
