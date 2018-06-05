@@ -8,3 +8,8 @@ The Unreal Build System uses *.Target.cs, *.Build.cs file to generate the projec
 The reason for the "fail to generate the project files warning" issue, is because the 4.18 changes setting for the generate the files step.
 
 Solution: in BuildingEscape.uproject file, update the UnrealAssociation:4.12 to 4.18 or newer version
+
+- Warning: Failed to find object 'Class /Script/BuildEscape.BuildEscapeGameMode'
+Unreal 4.17 made the update for including header files to get better performance,
+so in the newer version, we need to include header files manually, such as 
+include "BuildEscape.h", include "GameFramework/Actor.h"
